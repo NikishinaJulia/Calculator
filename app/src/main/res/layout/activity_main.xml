@@ -1,18 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
+        android:id="@+id/result_window"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center" />
+
+    <GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/mc_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="MC"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"
+        android:textSize="26sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/m_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M+"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/mc_deletion_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M-"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/mr_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MR"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/clean_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/sign_replacement_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+-"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/division_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/multiplication_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/subtract_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/addition_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/result_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_rowSpan="2"
+        android:text="="
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/button_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_columnSpan="2"
+        android:text="0"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+    <Button
+        android:id="@+id/decimal_separator_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=","
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginHorizontal="1dp"/>
+
+
+
+</GridLayout>
+</LinearLayout>

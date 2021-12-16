@@ -7,9 +7,13 @@
 
     <TextView
         android:id="@+id/result_window"
-        android:layout_width="400dp"
+        android:layout_width="360dp"
         android:layout_height="200dp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:gravity="right|center_vertical"
+        />
 
     <GridLayout
         xmlns:tools="http://schemas.android.com/tools"

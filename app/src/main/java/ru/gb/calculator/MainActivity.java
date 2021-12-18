@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView resultWindow;
+    private String calculatorData;
 
     private Button mc;
     private Button mAddition;
@@ -35,6 +36,29 @@ public class MainActivity extends AppCompatActivity {
     private Button result;
     private Button decimalSeparator;
 
+
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putSerializable("calculatorLogic", calculatorData);
+    }
+
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        getCalculator(savedInstanceState);
+    }
+
+    private void getCalculator(Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            calculatorData = (String) savedInstanceState.getSerializable("calculatorLogic");
+            if (calculatorData != null) {
+                resultWindow.setText(calculatorData);
+            } else {
+                calculatorData = "";
+            }
+        }else {
+            calculatorData = "";
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,80 +92,94 @@ public class MainActivity extends AppCompatActivity {
 
         number0.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '0';
             resultWindow.append("0");
         });
 
         number1.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '1';
             resultWindow.append("1");
         });
 
         number2.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '2';
             resultWindow.append("2");
         });
 
         number3.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '3';
             resultWindow.append("3");
         });
 
         number4.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '4';
             resultWindow.append("4");
         });
 
         number5.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '5';
             resultWindow.append("5");
         });
 
         number6.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '6';
             resultWindow.append("6");
         });
 
         number7.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '7';
             resultWindow.append("7");
         });
 
         number8.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '8';
             resultWindow.append("8");
         });
 
         number9.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '9';
             resultWindow.append("9");
         });
 
         decimalSeparator.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ ',';
             resultWindow.append(",");
         });
 
         addition.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '+';
             resultWindow.append("+");
         });
 
         multiplication.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '*';
             resultWindow.append("*");
         });
 
         division.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '/';
             resultWindow.append("/");
         });
 
         subtract.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
+            calculatorData = calculatorData+ '-';
             resultWindow.append("-");
         });
-
-
+        getCalculator(savedInstanceState);
     }
 
 

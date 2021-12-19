@@ -8,10 +8,10 @@
     <TextView
         android:id="@+id/result_window"
         android:layout_width="360dp"
-        android:layout_height="200dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:gravity="right|center_vertical"
         />
 
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:columnCount="4"
+        android:columnCount="6"
         android:orientation="horizontal"
         tools:context=".MainActivity">
 
@@ -29,9 +29,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/mc"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -39,9 +39,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/m_addition"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -49,9 +49,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/mc_deletion"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -59,9 +59,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/mr"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -69,9 +69,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/clean"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -79,39 +79,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/plus_minus"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
-            android:id="@+id/division_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
-            android:text="@string/division"
-            android:textSize="26sp"
-            android:backgroundTint="@color/blue"/>
-
-        <Button
-            android:id="@+id/multiplication_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
-            android:text="@string/multiplication"
-            android:textSize="26sp"
-            android:backgroundTint="@color/blue"/>
 
         <Button
             android:id="@+id/button_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_7"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -119,9 +100,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_8"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -129,29 +110,52 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_9"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
-            android:id="@+id/subtract_button"
+            android:id="@+id/division_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
-            android:text="@string/minus"
-            android:textSize="26sp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/division"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/multiplication_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/multiplication"
+            android:textSize="22sp"
+            android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/result_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan ="3"
+            android:layout_gravity="fill"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/result"
+            android:textSize="22sp"
+            android:backgroundTint="@color/blue"/>
+
 
         <Button
             android:id="@+id/button_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_4"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -159,9 +163,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_5"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -169,9 +173,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_6"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -179,9 +183,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/plus"
-            android:textSize="26sp"
+            android:textSize="22sp"
+            android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/subtract_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/minus"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -189,9 +203,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_1"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -199,9 +213,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_2"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -209,33 +223,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_3"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
-            android:id="@+id/result_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowSpan="2"
-            android:layout_gravity="fill"
-            android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
-            android:text="@string/result"
-            android:textSize="26sp"
-            android:backgroundTint="@color/blue"/>
-
+.
         <Button
             android:id="@+id/button_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:layout_gravity="fill"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/number_0"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
 
         <Button
@@ -243,10 +244,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="1dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/decimal_separator"
-            android:textSize="26sp"
+            android:textSize="22sp"
             android:backgroundTint="@color/blue"/>
+
+
 
 
     </GridLayout>

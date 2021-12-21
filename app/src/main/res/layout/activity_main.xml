@@ -24,7 +24,7 @@
         android:orientation="horizontal"
         tools:context=".MainActivity">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/mc_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/m_add_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/mc_deletion_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/mr_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/clean_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/sign_replacement_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/division_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/multiplication_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/subtract_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/addition_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -184,7 +184,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -194,7 +194,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -204,7 +204,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -214,7 +214,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/result_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -226,7 +226,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -238,7 +238,7 @@
             android:textSize="26sp"
             android:backgroundTint="@color/blue"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/decimal_separator_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

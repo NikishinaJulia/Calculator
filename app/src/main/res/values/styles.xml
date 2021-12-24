@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalcButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/calc_button_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/calc_button_margin</item>
+        <item name="android:textSize">@dimen/calc_button_size</item>
+        <item name="android:backgroundTint">@color/calc_button_color</item>
+    </style>
+
+    <style name="CalcButtonStyle.Zero">
+        <item name="android:layout_columnSpan">@integer/calc_button_layout_columnSpan</item>
+        <item name="android:layout_gravity">fill</item>
+    </style>
+
+    <style name="CalcButtonStyle.Result">
+        <item name="android:layout_rowSpan">@integer/calc_button_layout_rowSpan</item>
+        <item name="android:layout_gravity">fill</item>
+    </style>
+
+    <style name="CalcResultWindowStyle">
+    <item name="android:layout_width">@dimen/result_window_width</item>
+        <item name="android:layout_height">@dimen/result_window_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/result_window_size</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+
+</resources>

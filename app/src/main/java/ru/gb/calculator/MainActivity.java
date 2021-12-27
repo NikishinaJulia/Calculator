@@ -62,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        boolean style = getIntent().getExtras().getBoolean(ChangeThemeActivity.STYLE, true);
+        if(!style) {
+            setTheme(R.style.Theme_Calculator);
+        }else{
+            setTheme(R.style.Theme_Calculator_2);
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

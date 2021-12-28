@@ -21,7 +21,7 @@
     <string name="number_3">3</string>
     <string name="result">=</string>
     <string name="number_0">0</string>
-    <string name="decimal_separator">,</string>
+    <string name="decimal_separator">.</string>
     <string name="change_themes">Какую тему для калькулятора выберете?</string>
     <string name="theme_1">Тема №1</string>
     <string name="theme_2">Тема №2</string>

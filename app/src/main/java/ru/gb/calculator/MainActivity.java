@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView resultWindow;
-    private String calculatorData;
+    private CalculatorLogic calculatorLogic;
 
     private Button mc;
     private Button mAddition;
@@ -35,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
     private Button addition;
     private Button result;
     private Button decimalSeparator;
+    private String calculatorData;
 
 
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putSerializable("calculatorLogic", calculatorData);
+        outState.putSerializable("calculatorLogic", calculatorLogic);
     }
 
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -49,14 +50,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void getCalculator(Bundle savedInstanceState) {
         if (savedInstanceState != null) {
-            calculatorData = (String) savedInstanceState.getSerializable("calculatorLogic");
-            if (calculatorData != null) {
-                resultWindow.setText(calculatorData);
+            calculatorLogic = (CalculatorLogic) savedInstanceState.getSerializable("calculatorLogic");
+            if (calculatorLogic != null) {
+                resultWindow.setText(calculatorLogic.getCurrentText());
             } else {
-                calculatorData = "";
+                calculatorLogic = new CalculatorLogic();
             }
         }else {
-            calculatorData = "";
+            calculatorLogic = new CalculatorLogic();
         }
     }
 
@@ -98,92 +99,92 @@ public class MainActivity extends AppCompatActivity {
 
         number0.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '0';
-            resultWindow.append("0");
+            resultWindow.setText(calculatorLogic.addSymbol('0'));
         });
 
         number1.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '1';
-            resultWindow.append("1");
+            resultWindow.setText(calculatorLogic.addSymbol('1'));
         });
 
         number2.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '2';
-            resultWindow.append("2");
+            resultWindow.setText(calculatorLogic.addSymbol('2'));
         });
 
         number3.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '3';
-            resultWindow.append("3");
+            resultWindow.setText(calculatorLogic.addSymbol('3'));
         });
 
         number4.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '4';
-            resultWindow.append("4");
+            resultWindow.setText(calculatorLogic.addSymbol('4'));
         });
 
         number5.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '5';
-            resultWindow.append("5");
+            resultWindow.setText(calculatorLogic.addSymbol('5'));
         });
 
         number6.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '6';
-            resultWindow.append("6");
+            resultWindow.setText(calculatorLogic.addSymbol('6'));
         });
 
         number7.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '7';
-            resultWindow.append("7");
+            resultWindow.setText(calculatorLogic.addSymbol('7'));
         });
 
         number8.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '8';
-            resultWindow.append("8");
+            resultWindow.setText(calculatorLogic.addSymbol('8'));
         });
 
         number9.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '9';
-            resultWindow.append("9");
+            resultWindow.setText(calculatorLogic.addSymbol('9'));
         });
 
         decimalSeparator.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ ',';
-            resultWindow.append(",");
+            resultWindow.setText(calculatorLogic.addSymbol('.'));
         });
 
         addition.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '+';
-            resultWindow.append("+");
+            resultWindow.setText(calculatorLogic.addSymbol('+'));
         });
 
         multiplication.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '*';
-            resultWindow.append("*");
+            resultWindow.setText(calculatorLogic.addSymbol('*'));
         });
 
         division.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '/';
-            resultWindow.append("/");
+            resultWindow.setText(calculatorLogic.addSymbol('/'));
         });
 
         subtract.setOnClickListener(v -> {
             resultWindow = (TextView) findViewById(R.id.result_window);
-            calculatorData = calculatorData+ '-';
-            resultWindow.append("-");
+            resultWindow.setText(calculatorLogic.addSymbol('-'));
+        });
+
+        result.setOnClickListener(v -> {
+            resultWindow = (TextView) findViewById(R.id.result_window);
+            resultWindow.setText(calculatorLogic.addSymbol('='));
+        });
+
+        clean.setOnClickListener(v -> {
+            resultWindow = (TextView) findViewById(R.id.result_window);
+            resultWindow.setText(calculatorLogic.addSymbol('C'));
+        });
+
+        signReplacement.setOnClickListener(v -> {
+            resultWindow = (TextView) findViewById(R.id.result_window);
+            resultWindow.setText(calculatorLogic.addSymbol('|'));
         });
         getCalculator(savedInstanceState);
     }
